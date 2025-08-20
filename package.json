@@ -17,11 +17,16 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build & node dist/index.js",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@types/module-alias": "^2.0.4",
     "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.40.0",
+    "@typescript-eslint/parser": "^8.40.0",
+    "eslint": "^9.33.0",
     "typescript": "^5.9.2"
   },
   "dependencies": {
