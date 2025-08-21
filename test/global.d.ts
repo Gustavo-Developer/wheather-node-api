@@ -1,5 +1,5 @@
-declare namespace NodeJS {
-  interface Global {
-    testRequest: import("supertest").SuperTest<import("supertest").Test>;
-  }
+export {};
+
+declare global {
+  var testRequest: ReturnType<typeof import("supertest")>;
 }
