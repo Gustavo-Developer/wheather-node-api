@@ -1,5 +1,5 @@
 export {};
 
 declare global {
-  var testRequest: ReturnType<typeof import("supertest")>;
+  var testRequest: ReturnType<typeof import('supertest')>;
 }
